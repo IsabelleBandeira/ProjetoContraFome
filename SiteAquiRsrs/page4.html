@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Solution</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a class="logo" href="#home">
+
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a onclick="closeMenu()" href="index.html">INÍCIO</a>
+          </li>
+          <li><a onclick="closeMenu()" href="page2.html">MAPA DA FOME</a></li>
+          <li><a onclick="closeMenu()" href="page3.html">ODS 2</a></li>
+          <li><a onclick="closeMenu()" href="page4.html">SUSTENTABILIDADE</a></li>
+          <li><a onclick="closeMenu()" href="page5.html">SOLUÇÃO</a></li>
+        </ul>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section id="">
+    <div class="wrapper">
+      <div class="brasil-text">
+        <h1 class="">Comida no Lixo</h1>
+        <p class="retrocesso-historico">Brasil desperdiça alimentos no campo, nas rodovias, em supermercados e dentro de
+          suas próprias casas,
+          enquanto milhões passam fome.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="">
+        <img src="img/charge.png" alt="Charge fome" class="charge" />
+      </div>
+
+      <div class="">
+        <div class="content">
+
+          <!-- https://codepen.io/mark_sottek/pen/mJdByp-->
+          <div class="rectangle"></div>
+
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+            <!-- here goes what customers say -->
+            <h1 class="fome-inseguranca">A fome e a insegurança alimentar avançam em todo o Brasil</h1>
+
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+              <div class="mySlidesContainer justify">
+                <p>
+                  O desperdício tem um efeito negativo sobre o meio ambiente devido à utilização não sustentável dos recursos
+                  naturais. Imagine que boa parte dos agrotóxicos, água, terras, fertilizantes, desmatamento, transporte,
+                  gastos de energia e petróleo para a produção de máquinas e combustíveis empregados em todos os processos da
+                  agropecuária são utilizados em vão. Isso faz com que seja necessário intensificar ainda mais a produção e,
+                  consequentemente, a pressão ao meio ambiente.
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="mySlidesContainer justify">
+                <p>
+                  No caso de desperdício de alimentos de origem animal, o prejuízo ambiental é maior, pois a criação de
+                  carneiro ou boi demanda maiores quantidades de insumos que a produção vegetal. Isso sem falar na questão do
+                  aumento da quantidade de resíduos sólidos, que é formado majoritariamente por resíduos orgânicos (60%).
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="mySlidesContainer justify">
+                <p>
+                  O desperdício e a perda de alimentos também causam cerca de 10% das emissões que contribuem para a crise
+                  climática. De acordo com dados do Instituto de Pesquisa Econômica Aplicada (Ipea), mais da metade de todo o
+                  lixo que produzimos em casa é orgânico. Todo esse resíduo, quando descartado em aterros e lixões, junto com
+                  materiais tóxicos como pilhas e baterias, produz chorume e outros efluentes que causam impactos à saúde e ao
+                  meio ambiente. Além disso, os resíduos sem tratamento emitem gás metano, que é cerca de 25 vezes mais
+                  prejudicial para o efeito estufa do que o gás carbônico.   
+                </p>
+              </div>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+
+          </div><!-- END slidehow-container -->
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="faixa">
+    <marquee>
+      <div class="track">
+        <h2 class="jogar-comida">jogar comida fora não é sustentável jogar comida fora não é sustentável jogar comida
+          fora não é sustentável jogar comida fora não é sustentável jogar comida fora não é sustentável jogar comida
+          fora não é sustentável </h2>
+      </div>
+    </marquee> 
+  </div>
+  <section id="">
+    
+    <div class="wrapper">
+
+      <div class="justify">
+        <p class="paragrafo">
+          No âmbito mundial, entre um quarto e um terço dos alimentos produzidos anualmente para o consumo humano se
+          perde ou é desperdiçado. Isso equivale a cerca de 1,300 bilhões toneladas de alimentos, o que inclui 30% dos
+          cereais, entre 40 e 50% das raízes, frutas, hortaliças e sementes oleaginosas, 20% da carne e produtos
+          lácteos e 35% dos peixes. A FAO calcula que esses alimentos seriam suficientes para alimentar dois bilhões
+          de pessoas.<br>
+          <br>No Brasil, grande parte é desperdiçada na colheita e durante o manuseio e logística da produção: na
+          colheita, o desperdício de alimentos é de 10%. Durante o transporte e armazenamento, a cifra é de 50%. Nas
+          centrais de abastecimento a perda é de 30%, enquanto nos supermercados, varejos e domicílios 10% vai para o
+          lixo.
+          <br>As perdas e desperdícios têm grande impacto na sustentabilidade dos sistemas alimentares, reduzem a
+          disponibilidade local e mundial de alimentos, geram menores recursos para os produtores e aumentam os preços
+          para os consumidores.
+        </p>
+
+      </div>
+    </div>
+    <center><img src="img/onde-esta-desperdicio.png" alt="Onde esta o desperdicio" class="onde-esta"/></center>
+
+  </section>
+
+  <section id="home">
+    <center>
+      <p class="producao-alimentos">Na produção de 2,9 milhões de toneladas de alimentos em 2020:</center></p>
+
+    <div class="wrapper">
+      <div class="stats background-white">
+        <div class="stat">
+          <h3> 95 mil</h3>
+          <p>toneladas de gás carbônico foram geradas com uso de combustível, equivalente à derruba de 665 mil árvores;
+          </p>
+        </div>
+
+        <div class="stat">
+          <h3>274 mil</h3>
+          <p>toneladas de fertilizantes foram consumidas, equivalente a metade da produção média de fertilizantes em um
+            mês no Brasil;</p>
+        </div>
+
+        <div class="stat">
+          <h3>4 bilhões</h3>
+          <p> de metros cúbicos de água foram gastos, o suficiente para abastecer uma cidade de 200 mil habitantes por
+            um dia. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mapa">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h2>Nem sempre o que está amassado está estragado</h2>
+        </header>
+
+        <div class="content justify">
+          <p>
+            Falta de conhecimento no manejo, mal acondicionamento no transporte e estoque, embalagem mal pensada e
+            controle de qualidade “muito rígido” foram algumas das causas apontadas para o desperdício de alimentos no
+            Brasil.
+            <br><br>
+            “Quem trabalha no controle de qualidade precisa saber que se as condições climáticas foram desfavoráveis,
+            pode ser que a uva Itália venha amarelada e não tão verde. Nem sempre o padrão de aparência se mantém, mas
+            outras qualidades, sim” afirmou Elisangeles Souza, representante técnica da Federação da Agricultura do
+            Estado do Paraná (FAEP).
+            <br><br>
+            Outro problema apontado foi a embalagem de transporte, mal pensada para o mercado interno, segundo Tarcísio
+            Menezes, professor e empresário da área de logística. A média é que 40% dos produtos (alimentícios ou não)
+            são danificados por causa da embalagem, especialmente frutas e verduras, que são mais delicadas. Muitas
+            vezes a embalagem representa um custo maior no valor que o produto em si”, exemplificou Menezes.
+          </p>
+          <!-- https://codepen.io/mark_sottek/pen/mJdByp-->
+        </div>
+
+
+      </div>
+
+      <div class="col-b">
+        <img src="img/frutas-amassadas.jpg" alt="Mapa da fome Brasil" class="mapa-fome" />
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="wrapper">
+      <div class="col-a">
+
+
+        <p>
+          Todos os direitos reservados.
+        </p>
+      </div>
+
+      
+    </div>
+  </footer>
+
+  <a id="backToTopButton" href="#home">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#00856F" />
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+
+  <!-- ScrollReaveal Lib -->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

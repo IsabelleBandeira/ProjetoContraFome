@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Solution</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a class="logo" href="#home">
+
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a onclick="closeMenu()" href="index.html">INÍCIO</a>
+          </li>
+          <li><a onclick="closeMenu()" href="page2.html">MAPA DA FOME</a></li>
+          <li><a onclick="closeMenu()" href="page3.html">ODS 2</a></li>
+          <li><a onclick="closeMenu()" href="page4.html">SUSTENTABILIDADE</a></li>
+          <li><a onclick="closeMenu()" href="page5.html">SOLUÇÃO</a></li>
+        </ul>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home">
+    <img src="img/mao.png" alt="Mao robo" class="mao-robo" />
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h1 class="text-ia">Inteligência Artificial na luta contra a fome</h1>
+        </header>
+      </div>
+
+
+      <div class="stats">
+        <div class="stat">
+          <h3> 19,1 milhões</h3>
+          <p>no fim de 2020 de brasileiros/as conviviam com a fome</p>
+        </div>
+
+        <div class="stat">
+          <h3>33,1 milhões</h3>
+          <p>de pessoas sem ter o que comer em 2022.</p>
+        </div>
+
+        <div class="stat">
+          <h3>1%</h3>
+          <p>equivalente a 2 milhões de pessoas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+
+        <div class="content">
+
+          <!-- https://codepen.io/mark_sottek/pen/mJdByp-->
+          <div class="rectangle"></div>
+
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+            <!-- here goes what customers say -->
+            <h1 class="fome-inseguranca">A fome e a insegurança alimentar avançam em todo o Brasil</h1>
+
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+              <div class="mySlidesContainer justify">
+                <p>
+                   De acordo com a FAO (Organização das Nações Unidas para Alimentação e Agricultura), a fome é
+                  considerada a sensação de dor física causada pela ausência de alimentação por pelo menos um dia. O
+                  termo “fome” também costuma ser usado como sinônimo de subalimentação crônica, ou seja, a condição
+                  persistente – que dura muito tempo – na qual o consumo alimentar habitual de um indivíduo é
+                  insuficiente para fornecer a quantidade de calorias necessárias para manter uma vida normal, ativa e
+                  saudável.
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="mySlidesContainer justify">
+                <p>
+                   A falta de acesso regular a uma alimentação adequada por grande parte da população brasileira tem
+                  sido um dos principais desafios enfrentados pela sociedade ao longo dos últimos anos. O país havia
+                  saído do Mapa da Fome da Organização das Nações Unidas (ONU) em 2014, por meio de estratégias de
+                  segurança alimentar e nutricional aplicadas desde meados da década de 1990. Mas voltou a figurar no
+                  cenário a partir de 2015, obtendo um especial agravamento ao longo da pandemia de Covid-19 que afetou
+                  o mundo todo por dois anos a partir de 2020.
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="mySlidesContainer justify">
+                <p>
+                   De acordo com a rede PENSSAN, a pesquisa foi realizada entre novembro de 2021 e abril de
+                    2022, a partir de entrevistas feitas em 12.745 domicílios, distribuídos em
+                  áreas
+                  urbanas e rurais de 577 municípios das 27 unidades da federação – 26 estados mais o Distrito Federal.
+                  A
+                  metodologia da pesquisa considerou a Escala Brasileira de Insegurança Alimentar (Ebia), a mesma
+                  utilizada
+                  pelo Instituto Brasileiro de Geografia e Estatística (IBGE) para mapear a fome no país.
+                </p>
+              </div>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+
+          </div><!-- END slidehow-container -->
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="col-b">
+        <img src="img/fome-desemprego.jpg"
+          alt="Fome desemprego" 
+          class="fome-desemprego"
+          />
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="wrapper">
+      <div class="col-a">
+
+        <div class="content justify">
+          <p>O Brasil já foi referência internacional no combate à fome. Entre 2004 e 2013, políticas públicas de
+            erradicação da pobreza e da miséria reduziram a fome para menos da metade do índice inicial: de 9,5% para
+            4,2% dos lares brasileiros. Hoje, infelizmente, o país é outro.<br>
+            <br>Em 2022, o Segundo Inquérito Nacional sobre Insegurança Alimentar no Contexto da Pandemia de Covid-19 no
+            Brasil apontou que 33,1 milhões de pessoas não têm garantido o que comer — o que representa 14 milhões de
+            novos brasileiros em situação de fome, um salto de 9% (19,1 milhões de pessoas) para 15,5% em comparação a
+            2020 — Conforme o estudo, 125,2 milhões de brasileiros vivem com algum grau de insegurança alimentar, número
+            que corresponde a mais da metade (58,7%) da população do país. A última estimativa nacional antes da
+            pandemia de Covid-19, apontava uma porcentagem de 36,7%.</p>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="./img/page1.jpeg"
+          alt="Homem negro com moletom bege mexendo no celular e sorrindo"
+          class="brasil-refere" />
+      </div>
+    </div>
+  </section>
+
+  <section class="customer-revs">
+
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="col-a">
+        <p>
+          Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <a id="backToTopButton" href="#home">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#00856F" />
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+
+
+  <!-- ScrollReaveal Lib -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

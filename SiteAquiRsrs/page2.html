@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Solution</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a class="logo" href="#home">
+
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a onclick="closeMenu()" href="index.html">INÍCIO</a>
+          </li>
+          <li><a onclick="closeMenu()" href="page2.html">MAPA DA FOME</a></li>
+          <li><a onclick="closeMenu()" href="page3.html">ODS 2</a></li>
+          <li><a onclick="closeMenu()" href="page4.html">SUSTENTABILIDADE</a></li>
+          <li><a onclick="closeMenu()" href="page5.html">SOLUÇÃO</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <section id="">
+    <div class="wrapper">
+      <div class="brasil-text">
+          <h1 class="">Brasil no Mapa da Fome</h1>
+          <p class="retrocesso-historico">Retrocesso aos anos 90.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="mapa">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h2>Mapa da fome</h2>
+        </header>
+
+        <div class="content justify">
+          <p>
+            O Mapa da Fome é uma ferramenta que apresenta o número de pessoas que enfrentam a fome e a insegurança
+            alimentar no mundo. O Mapa aponta os países em que existem populações que não têm acesso à alimentação, têm
+            acesso inadequado ou insuficiente para uma vida saudável.<br>
+            <br>Publicado pela FAO anualmente no relatório “O estado da segurança alimentar e da nutrição no mundo”,
+            esse relatório apresenta a fome e a insegurança alimentar no mundo, por região e por país.
+          </p>
+          <!-- https://codepen.io/mark_sottek/pen/mJdByp-->
+        </div>
+
+
+      </div>
+
+      <div class="col-b">
+        <img src="img/mapa-da-fome.png" alt="Mapa da fome Brasil" class="mapa-fome" />
+      </div>
+    </div>
+  </section>
+
+
+  <section id="services">
+    <div class="wrapper">
+      <div class="content">
+        <div class="col-a">
+          <header>
+            <h1 class="">Insegurança alimentar</h1>
+          </header>
+          <div class="content justify">
+            <p>
+              O Mapa da Fome é uma ferramenta que apresenta o número de pessoas que enfrentam a fome e a insegurança
+              alimentar no mundo. O Mapa aponta os países em que existem populações que não têm acesso à alimentação,
+              têm acesso inadequado ou insuficiente para uma vida saudável.<br>
+              <br>Publicado pela FAO anualmente no relatório “O estado da segurança alimentar e da nutrição no mundo”,
+              esse relatório apresenta a fome e a insegurança alimentar no mundo, por região e por país.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img src="img/inseguranca-alimentar.png" alt="Mapa da fome Brasil" />
+        </div>
+        <div class="cards">
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Leve</h3>
+            <p>
+              atinge 28% dos brasileiros. É quando a família tem preocupação ou incerteza quanto ao acesso aos alimentos
+              no futuro, com qualidade inadequada resultante de estratégias que visam não comprometer a quantidade de
+              alimentos. </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Moderada</h3>
+            <p>
+              atinge 15,2% dos brasileiros. É quando há redução quantitativa de alimentos entre os adultos e/ou ruptura
+              nos padrões de alimentação resultante da falta de alimentos. </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Grave</h3>
+            <p>
+              atinge 15,5% dos brasileiros. É quando há redução quantitativa de alimentos entre as crianças e/ou ruptura
+              nos padrões de alimentação resultante da falta de alimentos. </p>
+          </div>
+          <img src="img/graficos.png" alt="Mapa da fome Brasil" />
+
+          <p>Taxa de prevalência de insegurança alimentar moderada ou grave por ano no Brasil:</p>
+          <canvas id="myChart5"></canvas>
+
+          <p>Taxa de prevalência de insegurança alimentar grave por ano no Brasil:</p>
+          <canvas id="myChart6"></canvas>
+
+          <br>
+          <p class="justify">
+            Em média, considerando todas as regiões, 3 em cada 10 famílias relataram incerteza quanto ao acesso a
+            alimentos em um futuro próximo e preocupação em relação à qualidade da alimentação no futuro imediato. 4 em
+            cada 10 famílias das regiões Norte e Nordeste, 3 em cada 10 das regiões Centro-Oeste e Sudeste, e 2 em cada
+            10 da região Sul relataram redução parcial ou severa no consumo de alimentos nos três meses que antecederam
+            as entrevistas do II VIGISAN. As formas mais severas de insegurança alimentar (moderada ou grave) atingem
+            fatias maiores da população nas regiões norte (45,2%) e nordeste (38,4%).
+          </p>
+          <img src="img/Norte_nordeste_fixed.svg" width="330" alt="Mapa da fome Brasil" />
+          <img src="img/Centrooeste_fixed.svg" width="330" alt="Mapa da fome Brasil" />
+          <img src="img/Sul_fixed.svg" width="330" alt="Mapa da fome Brasil" />
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                O campo passa mais fome
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  A insegurança alimentar está presente em mais de 60% dos domicílios das áreas rurais. Desses, 18,6%
+                  das famílias convivem com a fome, valor maior do que a média nacional. A pobreza das populações
+                  rurais, associada ao desmonte das políticas de apoio às populações do campo, da floresta e das águas,
+                  continua impondo a fome, e atinge 21,8% dos lares de agricultores(as) familiares e pequenos
+                  produtores(as) rurais.
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                A fome tem cor
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  Enquanto a segurança alimentar está presente em 53,2% dos domicílios onde a pessoa de referência se
+                  autodeclara branca, nos lares com responsáveis de raça/cor preta ou parda ela cai para 35%. Em outras
+                  palavras, 65% dos lares comandados por pessoas pretas e pardas convivem com restrição de alimentos.
+                  Nas residências comandadas por pessoas de cor/raça preta ou parda, a segurança alimentar teve uma
+                  redução expressiva entre 2020 e 2022, passando de 41,5% para 35%. O contrário aconteceu com a fome,
+                  que saltou de 10,4% para 18,1%.
+                  <br><br>
+                  <img src="img/fome-tem-cor.png" alt="Gráfico fome tem cor" />
+                  <img src="img/fome-tem-cor-2.png" alt="Gráfico fome tem cor 2" />
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                A fome tem gênero
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  6 de cada 10 lares comandados por mulheres convivem com a insegurança alimentar. Nas casas em que a
+                  mulher é a pessoa de referência, a fome passou de 11,2% para 19,3%. Nos lares que têm homens como
+                  responsáveis, a fome passou de 7% para 11,9%. Isso ocorre, entre outros fatores, pela desigualdade
+                  salarial entre os gêneros.
+                  <br><br>
+                  <img src="img/fome-tem-gernero.png" alt="Gráfico fome tem genero" />
+                  <img src="img/fome-tem-gernero2.png" alt="Gráfico fome tem genero" />
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                Lares com crianças tem mais fome
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  A fome dobrou nas famílias com crianças menores de 10 anos, passando de 9,4% em 2020 para 18,1% em
+                  2022. Na presença de três ou mais pessoas com até 18 anos de idade no grupo familiar, a fome atinge
+                  25,7% dos lares. Já nos domicílios apenas com moradores adultos a segurança alimentar chegou a 47,4%,
+                  número maior do que a média nacional.
+                  <br><br>
+                  <img src="img/fome-tem-gernero.png" alt="Gráfico fome tem genero" />
+                  <img src="img/fome-tem-gernero2.png" alt="Gráfico fome tem genero" />
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                Quanto mais renda, menos fome
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  91% dos domicílios cuja renda por pessoa era inferior a 1/4 do salário mínimo convivem com algum grau
+                  de insegurança alimentar. Em 43% deles os moradores vivenciam a fome. Por outro lado, 67% dos
+                  domicílios com renda maior que um salário mínimo têm o acesso pleno a alimentos (segurança alimentar)
+                  garantido. Porém, se em 2020 não havia domicílios com renda maior que um salário mínimo por pessoa em
+                  situação de fome, no início de 2022 essa deixou de ser uma garantia contra a privação do consumo de
+                  alimentos – consequência da crise econômica e dos reajustes do salário mínimo abaixo da inflação.
+                  Agora encontramos 3% dos lares nesta faixa de renda em situação de fome, e 6% convivem com redução no
+                  acesso aos alimentos.
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                A fome é maior entre quem tem emprego informal
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  A fome é maior nos domicílios em que a pessoa responsável está desempregada (36,1%), trabalha como
+                  agricultor(a) familiar (22,4%) ou tem emprego informal (21,1%). Já a segurança alimentar é maior nos
+                  lares onde o(a) chefe da família trabalha com carteira assinada, chegando a 53,8% dos domicílios. Mas,
+                  enquanto em 2020 a fome estava presente em 3,3% dos domicílios onde a pessoa responsável tinha emprego
+                  formal, em 2021/2022 o percentual subiu para 7,3%. Nos domicílios em que o trabalho da pessoa de
+                  referência é informal, o aumento foi de 14,3% para 20,3%.
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                Sozinhos, os benefícios sociais não são capazes de frear a fome
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  A fome é maior nos domicílios em que a pessoa responsável está desempregada (36,1%), trabalha como
+                  agricultor(a) familiar (22,4%) ou tem emprego informal (21,1%). Já a segurança alimentar é maior nos
+                  lares onde o(a) chefe da família trabalha com carteira assinada, chegando a 53,8% dos domicílios. Mas,
+                  enquanto em 2020 a fome estava presente em 3,3% dos domicílios onde a pessoa responsável tinha emprego
+                  formal, em 2021/2022 o percentual subiu para 7,3%. Nos domicílios em que o trabalho da pessoa de
+                  referência é informal, o aumento foi de 14,3% para 20,3%.
+                  <br><br>
+                  <img src="img/bolsa-familia.png" alt="Bolsa familia" />
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                A fome atinge quem não consegue chegar às escolas
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  Há fome em 22,3% dos domicílios com responsáveis com 4 anos ou menos de estudo. Em 2020 esse
+                  percentual era de 14,9%. O maior percentual de segurança alimentar é em domicílios cujos responsáveis
+                  têm mais de 8 anos de estudo: 50,6%.
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                Quem tem fome tem sede
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  A falta de acesso regular e permanente à água — ou insegurança hídrica — é uma realidade para 12% da
+                  população geral brasileira. A insegurança alimentar moderada esteve presente em 22,8% desses lares, e
+                  a fome, em 42,%. A insegurança alimentar se manifesta em 48,3% dos lares com restrição de acesso à
+                  água na região Norte, em 43,0% no Sudeste, em 41,8% do Centro-Oeste e em 41,2% no Nordeste.
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                Há vergonha de sentir fome
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  A insegurança alimentar moderada e grave está presente em 49,1% dos lares que informaram
+                  endividamento, em 48,7% dos que relataram venda de bens ou equipamentos de trabalho e em 55,2% dos que
+                  relataram que algum morador parou de estudar para contribuir com a renda familiar.
+                  <br>8,2% das famílias relataram sensação de vergonha, tristeza ou constrangimento para garantir o que
+                  comer. Dessas, 24,3% convivem com as manifestações mais severas de insegurança alimentar (moderada e
+                  grave).
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                O alimento sai da despensa, a fome entra pela porta
+              </div><!-- /.accordion-item-header -->
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  Em 28,3% dos domicílios, pelo menos uma pessoa não consumiu as 3 refeições (café da manhã, almoço e
+                  jantar) diariamente. Cerca de metade das famílias que reduziram a quantidade comprada de arroz,
+                  feijão, vegetais e frutas convivem com a insegurança alimentar moderada ou grave. Nas famílias que
+                  deixaram de comprar carnes no período de três meses anteriores à pesquisa, em 70,4% há fome. Dados
+                  semelhantes foram encontrados nos lares onde seus moradores não haviam comprado frutas (64%) e
+                  vegetais (63,6%).
+                </div>
+              </div><!-- /.accordion-item-body -->
+            </div><!-- /.accordion-item -->
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="wrapper">
+      <div class="col-a">
+
+
+        <p>
+          Todos os direitos reservados.
+        </p>
+      </div>
+
+      <div class="col-b">
+
+      </div>
+    </div>
+  </footer>
+
+  <a id="backToTopButton" href="#home">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#00856F" />
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+
+  <script>
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+    accordionItemHeaders.forEach(accordionItemHeader => {
+      accordionItemHeader.addEventListener("click", event => {
+
+        // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+        //     const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+        //     if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+        //        currentlyActiveAccordionItemHeader.classList.toggle("active");
+        //        currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+        //      }
+
+        accordionItemHeader.classList.toggle("active");
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if (accordionItemHeader.classList.contains("active")) {
+          accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        }
+        else {
+          accordionItemBody.style.maxHeight = 0;
+        }
+
+      });
+    });
+  </script>
+
+<script>
+  var ValuesAB = ["2014-2016", "2015-2017", "2016-2018", "2017-2019", "2018-2020", "2019-2021"];
+  var ValuesBC = [3.9, 3.6, 3.6, 3.4, 7.5, 15.4];
+  var barColors = ["blue", "blue", "blue", "blue", "blue", "blue"];
+
+  new Chart("myChart6", {
+    type: "bar",
+    data: {
+      labels: ValuesAB,
+      datasets: [{
+        backgroundColor: barColors,
+        data: ValuesBC
+      }]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "Em Milhões"
+      }
+    }
+  });
+</script>
+
+<script>
+  var ValuesAB = ["2014-2016", "2015-2017", "2016-2018", "2017-2019", "2018-2020", "2019-2021"];
+  var ValuesBC = [37.5, 44.4, 45.4, 43.1, 49.6, 61.3];
+  var barColors = ["blue", "blue", "blue", "blue", "blue", "blue"];
+
+  new Chart("myChart5", {
+    type: "bar",
+    data: {
+      labels: ValuesAB,
+      datasets: [{
+        backgroundColor: barColors,
+        data: ValuesBC
+      }]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "Em Milhões"
+      }
+    }
+  });
+</script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

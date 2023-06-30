@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Solution</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a class="logo" href="#home">
+
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a onclick="closeMenu()" href="index.html">INÍCIO</a>
+          </li>
+          <li><a onclick="closeMenu()" href="page2.html">MAPA DA FOME</a></li>
+          <li><a onclick="closeMenu()" href="page3.html">ODS 2</a></li>
+          <li><a onclick="closeMenu()" href="page4.html">SUSTENTABILIDADE</a></li>
+          <li><a onclick="closeMenu()" href="page5.html">SOLUÇÃO</a></li>
+        </ul>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section id="">
+    <div class="wrapper">
+      <div class="erradicar-fome">
+        <h1>A ODS 2 tem por objetivo erradicar a fome, alcançar a segurança alimentar, melhorar a nutrição e promover a agricultura
+          sustentável. </h1>
+    </div>
+      <div class="content justify">
+        <p>
+          <br>Os 193 países membros da ONU, incluindo o Brasil, comprometeram-se a adotar a chamada Agenda Pós-2015,
+          considerada uma das mais ambiciosas da história da diplomacia internacional. A partir dela, as nações
+          trabalharão para cumprir os Objetivos de Desenvolvimento Sustentável (ODS).
+          <br><br>
+          Os ODS representam um plano de ação global para eliminar a pobreza extrema e a fome, oferecer educação de
+          qualidade ao longo da vida para todos, proteger o planeta e promover sociedades pacíficas e inclusivas até
+          2030.
+          <br><br>
+          São 17 objetivos ambiciosos e interconectados que abordam os principais desafios de desenvolvimento
+          enfrentados por pessoas no Brasil e no mundo.
+          <br>
+        </p>
+      </div>
+      <!-- <div class="col-b">
+          <img
+            src="./img/mulher-negra-com-moleton-verde-com-as-duas-maos-no-peito.png"
+            alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo"
+          />
+        </div> -->
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+        <a href="https://brasil.un.org/pt-br/sdgs" target="_blank">
+          <img src="img/todas-ods.png" alt="ODS" class="todas-ods" />
+        </a>
+      </div>
+
+      <div class="col-b">
+        <a href="https://www.ipea.gov.br/ods/ods2.html" target="_blank">
+          <img src="img/ods2.jpg" alt="ODS 2" class="ods2-wrapper" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="col-a">
+
+
+        <p>
+          Todos os direitos reservados.
+        </p>
+      </div>
+
+      <div class="col-b">
+      </div>
+    </div>
+  </footer>
+
+  <a id="backToTopButton" href="#home">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#00856F" />
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+
+  <!-- ScrollReaveal Lib -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

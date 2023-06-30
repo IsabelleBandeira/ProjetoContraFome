@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Solution</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a class="logo" href="#home">
+
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <a onclick="closeMenu()" href="index.html">INÍCIO</a>
+          </li>
+          <li><a onclick="closeMenu()" href="page2.html">MAPA DA FOME</a></li>
+          <li><a onclick="closeMenu()" href="page3.html">ODS 2</a></li>
+          <li><a onclick="closeMenu()" href="page4.html">SUSTENTABILIDADE</a></li>
+          <li><a onclick="closeMenu()" href="page5.html">SOLUÇÃO</a></li>
+        </ul>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+
+  <section>
+      <div>
+        <div class="col-a">
+            <header>
+              <div >
+              <h1 class="video-pitch"> Vídeo </h1>
+            </div>
+              <h1 class="video-pitch2"> Pitch </h1> <!--Centralizar Video Pitch-->
+            </div>
+      </div>
+    <div class="background-video"> </div>
+          <iframe class="video-player" width="660" height="415" src="https://www.youtube.com/embed/ew346Dk_wVk?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h2> Nossos Parceiros</h2>
+        </header>
+
+        <div class="content">
+          <p>Com a capacidade produtiva da GrowPack e o aporte investido da Ambev, nosso projeto tem a capacidade de mitigar o impacto da insegurança alimentar no estado de São Paulo, trazendo frutas, legumes e verduras de maior qualidade, por um valor mais acessível para as residências paulistas.</p>
+          <!-- https://codepen.io/mark_sottek/pen/mJdByp-->
+        </div>
+
+
+      </div>
+
+      <div class="col-b">
+        <img src="img/growpack-embalagem-bg-none.png"
+          alt="Embalagem de Palha de Milho da GrowPack" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrapper">
+      <div class="col-a">
+        <h4>Benefícios</h4>
+
+        <div class="content">
+          <p>A produção das embalagens com o biomaterial consome 80% menos água, reduz em 50% as emissões de gás carbônico (CO2), economiza 25% de energia elétrica em comparação com o papel cartão e é 100% compostável. Além disso, sua empresa estará alinhada com os ODS da ONU, especificamente o <a href="https://www.ipea.gov.br/ods/ods2.html" target="_blank">ODS 2</a> e o <a href="https://www.ipea.gov.br/ods/ods12.html"target="_blank">ODS 12.</a></p>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="img/agricultura-inteligente-com-iot-agricola (1).jpg"
+          alt="Homem negro com moletom bege mexendo no celular e sorrindo" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="col-a">
+        <p>
+          Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <a id="backToTopButton" href="#home">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#00856F" />
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+
+  <!-- ScrollReaveal Lib -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
+
+<!-- <h1>Nossa Proposta</h1>
+        <p>Apresentamos a vocês a embalagem de palha de milho, desenvolvida com a ajuda de Inteligência Artificial. Nossa embalagem é 100% biodegradável e oferece uma proteção superior aos produtos durante o transporte. Utilizamos o escaneamento 3D de frutas, legumes e verduras, e com a ajuda de uma IA com machine learning e foco em análise de imagens, criamos um formato personalizado que reduz consideravelmente o risco de danos.</p> -->
